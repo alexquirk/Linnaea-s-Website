@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bad+Script&family=Charm&family=La+Belle+Aurore&family=Libre+Baskerville&family=Montserrat:wght@300;400&family=Parisienne&family=Sofia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <!-- HEADER -->
+     <header>
+        <img class="logo" id="header-logo" src="./logotrace.png">
+        <div id="nav-container">
+            <div>
+                <a class="header-nav">about</a>
+                <a class="header-nav">menu</a>
+                <a class="header-nav">events</a>
+            </div>
+            <div>
+                <a class="header-nav">gallery</a>
+                <a class="header-nav">shop</a>
+                <a class="header-nav">contact</a>
+            </div>
+        </div>
+        <div class="menu-button">
+            <div class="menu-button-burger top-bun"></div>
+            <div class="menu-button-burger patty"></div>
+            <div class="menu-button-burger bottom-bun"></div>
+        </div>
+    </header>
+
+    <!-- BODY -->
+    <div id="main-body">
+        <div id="content">
+            <h1 class="align-right">The History</h1>
+            <div class="content-box">
+                <img class="content-image-left" src="./cafeLena.jpeg">
+                <h2>It all began in 1984 when Linnaea Phillips created a gathering place for conversation, 
+                    music, social events, and, of course, sharing good food and drink. With the help of many 
+                    friends, her vision of a classic coffee house became a reality. Almost 40 years later, 
+                    Linnaea's Cafe is still a beloved fixture of downtown San Luis Obispo and a popular place 
+                    for both locals and out-of-towners.<br><br>
+                    In 2023, Linnaea's was sold to husband-wife duo Alex and Rusty Quirk. Rusty, a Cal
+                    Poly Graduate and Michelin Guide-recognized pastry chef, and Alex, a SLO-local musician 
+                    and event producer, have dedicated themselves to keeping Linnaea’s the eclectic and welcoming 
+                    center of San Luis Obispo’s coffee house culture. Linnaea’s remains a popular showcase for 
+                    rising local artists and host to a variety of musical performances, poetry readings, art 
+                    installations, jazz jams, and other events.
+                </h2>
+            </div>
+            <h1 class="align-left">The Garden</h1>
+            <div class="content-box">
+                <img class="content-image-right" src="./garden_gallery1.jpeg">
+                <div class="content-text">
+                    <h2>The Garden has been around since the cafe was founded in 1984. It became a community 
+                        project when Linnaea asked friends and customers to bring in a brick or two to help build 
+                        the patio floor. You can still see the signed, decorated blocks here and there, reminding 
+                        us that we're all in this together--that we have the power to create community and a 
+                        beautiful space for us all to enjoy and benefit from.<br><br>
+                        One of our favorite things is to watch people discover the patio garden behind the coffee 
+                        shop itself. They usually sound something like this: "Oh, wow, would you look at this! 
+                        Amazing! It's so pretty. And there's a fish pond! No way!"<br><br>
+                        People spend many a lovely hour out back in the garden, sipping lattes, catching up with 
+                        friends, studying, or doing creative work in the quiet, serene space. The resident sparrows 
+                        and finches come and go among the dense branches of the tropical arbor, cleaning up any 
+                        muffin crumbs and taking little splash baths in the koi pools.
+                    </h2>
+                </div>
+            </div>
+            <h1 class="align-right">Our Town</h1>
+            <div class="content-box">
+                <img class="content-image-left" src="./cafeHall.jpeg">
+                <h2>San Luis Obispo (SLO, SLOtown, or San Luis) is the county seat and home  of California 
+                    Polytechnic State University (Cal Poly) with a population  of 45,000, about 1/3 of whom are 
+                    college students. It is almost exactly  half-way (about a 4 hour drive) between Los Angeles & 
+                    San Francisco,  and just a few miles from the coast, where Highways 1 and 101 meet.  It is  a 
+                    quiet and beautiful town, with a very strong sense of community. Town  slows down a bit during 
+                    the first part of the summer but picks up in  August when Europe takes a vacation. San Luis has 
+                    a beautiful downtown,  wonderful outdoor concerts during the summer, and great weather year  
+                    round. We are blessed to live in such a beautiful place.  
+                </h2>
+            </div>
+        </div>
+        <div class="hamburger-menu-container">
+            <div class="hamburger-list-container">
+                <div class="hamburger-nav">about</div>
+                <div class="hamburger-nav">menu</div>
+                <div class="hamburger-nav">events</div>
+                <div class="hamburger-nav">gallery</div>
+                <div class="hamburger-nav">shop</div>
+                <div class="hamburger-nav">contact</div>
+            </div>
+        </div>
+    </div>
+
+ <!-- FOOTER -->
+    <footer>
+        <div class="footer footer-address">1110 garden st.<br>san luis obispo, ca, 93401</div>
+        <div class="footer footer-hours">hours:<br>7am - 5pm daily</div>
+        <div class="footer footer-social-links-container">
+            <img class="social-links" src="./icons8-facebook-64.png">
+            <img class="social-links" src="./icons8-instagram-64.png">
+        </div>
+    </footer>
+
+
+<script>
+
+// HAMBURGER ANIMATION
+    
+const menuButton = document.querySelector('.menu-button');
+const hamburgerContainer = document.querySelector('.hamburger-menu-container');
+// const bannerImage = document.querySelector('banner-image');
+
+
+let menuOpen = false;
+menuButton.addEventListener('click', () =>{
+    if(!menuOpen) {
+        menuButton.classList.add('open');
+        hamburgerContainer.classList.add('expand');
+        menuOpen = true;
+    } else {
+        menuButton.classList.remove('open');
+        hamburgerContainer.classList.remove('expand');
+        menuOpen = false;
+    }
+});
+
+</script>
+    
+
+</body>
+
+
+</html>

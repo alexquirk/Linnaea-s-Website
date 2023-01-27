@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bad+Script&family=Charm&family=La+Belle+Aurore&family=Libre+Baskerville&family=Montserrat:wght@300;400&family=Parisienne&family=Sofia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <!-- HEADER -->
+     <header>
+        <img class="logo" id="header-logo" src="./logotrace.png">
+        <div id="nav-container">
+            <div>
+                <a class="header-nav">about</a>
+                <a class="header-nav">menu</a>
+                <a class="header-nav">events</a>
+            </div>
+            <div>
+                <a class="header-nav">gallery</a>
+                <a class="header-nav">shop</a>
+                <a class="header-nav">contact</a>
+            </div>
+        </div>
+        <div class="menu-button">
+            <div class="menu-button-burger top-bun"></div>
+            <div class="menu-button-burger patty"></div>
+            <div class="menu-button-burger bottom-bun"></div>
+        </div>
+    </header>
+
+    <!-- BODY -->
+    <div id="main-body">
+        <div id="content">
+            <h1>Gallery</h1>
+            <div class="gallery-text-box">
+                <h2 class="align-center">
+                    Linnaea's featured artist for March is XXX.<br><br>
+                    Artist receptions are held during San Luis Obispo’s Art after Dark 
+                    on the first Friday of every month.
+                </h2>
+                <img src="">
+            </div>
+        </div>
+        <div class="gallery-container">
+            <img class="gallery-image" src="./IMG_6158.jpeg">
+            <img class="gallery-image" src="./cafedrawing.jpeg">
+            <img class="gallery-image" src="./cafeHall.jpeg">
+            <img class="gallery-image" src="./cafeLena.jpeg">
+        </div>
+        <div class="bottom-border"></div>
+        <div class="hamburger-menu-container">
+            <div class="hamburger-list-container">
+                <div class="hamburger-nav">about</div>
+                <div class="hamburger-nav">menu</div>
+                <div class="hamburger-nav">events</div>
+                <div class="hamburger-nav">gallery</div>
+                <div class="hamburger-nav">shop</div>
+                <div class="hamburger-nav">contact</div>
+            </div>
+        </div>
+    </div>
+
+ <!-- FOOTER -->
+    <footer>
+        <div class="footer footer-address">1110 garden st.<br>san luis obispo, ca, 93401</div>
+        <div class="footer footer-hours">hours:<br>7am - 5pm daily</div>
+        <div class="footer footer-social-links-container">
+            <img class="social-links" src="./icons8-facebook-64.png">
+            <img class="social-links" src="./icons8-instagram-64.png">
+        </div>
+    </footer>
+
+
+<script>
+
+// HAMBURGER ANIMATION
+    
+const menuButton = document.querySelector('.menu-button');
+const hamburgerContainer = document.querySelector('.hamburger-menu-container');
+// const bannerImage = document.querySelector('banner-image');
+
+
+let menuOpen = false;
+menuButton.addEventListener('click', () =>{
+    if(!menuOpen) {
+        menuButton.classList.add('open');
+        hamburgerContainer.classList.add('expand');
+        menuOpen = true;
+    } else {
+        menuButton.classList.remove('open');
+        hamburgerContainer.classList.remove('expand');
+        menuOpen = false;
+    }
+});
+
+</script>
+    
+
+</body>
+
+
+</html>
