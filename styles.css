@@ -249,6 +249,12 @@ a.hamburger-nav:hover {
     opacity: .9;
 }
 
+.mobile-alt-image {
+    display: none;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -303,6 +309,10 @@ footer {
 
     .align-left, .align-right {
         text-align: center;
+    }
+
+    .mobile-alt-image {
+        display: block;
     }
 }
 
