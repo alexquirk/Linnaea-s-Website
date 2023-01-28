@@ -15,10 +15,6 @@ header {
     justify-content: space-between;
 }
 
-.tan {
-    background-color: #fff5ee;
-}
-
 #header-logo {
     height: 80px;
 }
@@ -101,13 +97,12 @@ a > img:hover {
 
 #main-body {
     display: grid;
+    width: 95vw;
     grid-template-rows: 1;
     grid-template-columns: 1;
     min-height: 302px;
     overflow: hidden;
-    width: 100vh;
-    align-items: center;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 
@@ -184,7 +179,7 @@ h2 {
     grid-row: 1;
     grid-column: 1;
     display: flex;
-    width: 95vw;
+    max-width: 100%;
     margin: 0px auto;
     min-height: 195px;
     object-fit: cover;
