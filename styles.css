@@ -42,6 +42,20 @@ header {
     font-size: 1.7rem;
 }
 
+a.header-nav {
+    color: black;
+    text-decoration: none;
+}
+
+a.header-nav:hover {
+    color: rgb(108, 108, 108);
+    text-decoration: none;
+}
+
+a > img:hover {
+    opacity: .7;
+}
+
 .menu-button {
     position: relative;
     display: none;
@@ -222,6 +236,16 @@ h2 {
     height: 100%;
     max-height: 300px;
     justify-content: space-evenly;
+}
+
+a.hamburger-nav {
+    color: black;
+    text-decoration: none;
+}
+
+a.hamburger-nav:hover {
+    color: rgb(108, 108, 108);
+    text-decoration: none;
 }
 
 .expand {
