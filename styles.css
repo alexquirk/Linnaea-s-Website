@@ -179,6 +179,8 @@ h2 {
 
 .gallery-image {
     max-height: 300px;
+    max-width: 300px;
+    object-fit: contain;
 }
 
 .bottom-border {
