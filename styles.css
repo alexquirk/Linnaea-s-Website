@@ -101,11 +101,11 @@ a > img:hover {
 
 #main-body {
     display: grid;
-    padding: 0 20px;
     grid-template-rows: 1;
     grid-template-columns: 1;
     min-height: 302px;
     overflow: hidden;
+    width: 100vh;
 }
 
 
