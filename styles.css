@@ -1,6 +1,7 @@
 body {
     background-color: white;
     font-family: 'Parisienne', cursive;
+    margin: 0;
 }
 
 /* HEADER */
@@ -8,9 +9,14 @@ body {
 header {
     display: flex;
     width: 95vw;
-    margin: 15px auto 15px;
+    margin: 0 auto 0 auto;
+    padding: 15px 0;
     align-items: center;
     justify-content: space-between;
+}
+
+.tan {
+    background-color: #fff5ee;
 }
 
 #header-logo {
@@ -81,6 +87,7 @@ header {
 
 #main-body {
     display: grid;
+    padding: 0 20px;
     grid-template-rows: 1;
     grid-template-columns: 1;
     min-height: 302px;
@@ -92,7 +99,7 @@ h1 {
     font-size: 2.5rem;
     text-align: center;
     margin: 25px auto 30px auto;
-    border-bottom: 2px black solid;
+    border-bottom: 1px black solid;
     max-width: 800px;
 }
 
@@ -185,7 +192,7 @@ h2 {
 
 .bottom-border {
     margin: 25px auto 30px auto;
-    border-top: 2px black solid;
+    border-top: 1px black solid;
     width: 95vw;
     max-width: 800px;
     margin-bottom: 30px;
