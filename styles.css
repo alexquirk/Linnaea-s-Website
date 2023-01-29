@@ -254,7 +254,7 @@ h2 {
     grid-row: 1;
     grid-column: 1;
     flex-direction: column;
-    width: 100vw;
+    width: 95vw;
     margin: 0px auto;
     opacity: 0;
     transition: opacity .3s ease-in-out;
