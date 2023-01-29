@@ -16,12 +16,6 @@ body {
 
 /* HEADER */
 
-.header-box {
-    background-color: white;
-    width: 100vw;
-    height: auto;
-}
-
 header {
     display: flex;
     width: 95vw;
@@ -175,7 +169,7 @@ h1 {
     width: 95vw;
     max-width: 800px;
     margin: 0px auto 20px auto;
-    background-color: floralwhite;
+    /* background-color: floralwhite; */
     padding: 20px;
     /* min-height: 500px; */
 }
