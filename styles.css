@@ -135,7 +135,7 @@ h1 {
     border-bottom: 1px black solid;
     max-width: 800px;
     line-height: .5;
-    width: 95vw;
+    /* width: 95vw; */
 }
 
 .align-left {
@@ -153,20 +153,22 @@ h1 {
 #content {
     grid-row: 1;
     grid-column: 1;
+    width: 95vw;
+    margin: 0 auto;
 }
 
 .content-box {
     display: block;
-    width: 95vw;
+    /* width: 95vw; */
     max-width: 800px;
     margin: 0px auto 60px auto;
     /* background-color: floralwhite; */
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .gallery-text-box {
     display: block;
-    width: 95vw;
+    /* width: 95vw; */
     max-width: 800px;
     margin: 0px auto 20px auto;
     /* background-color: floralwhite; */
