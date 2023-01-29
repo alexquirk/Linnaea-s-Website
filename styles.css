@@ -153,11 +153,12 @@ h1 {
 #content {
     grid-row: 1;
     grid-column: 1;
+    margin: 0 auto;
+    width: 95vw;
 }
 
 .content-box {
     display: block;
-    width: 95vw;
     max-width: 800px;
     margin: 0px auto 60px auto;
 }
@@ -197,13 +198,6 @@ h2 {
     max-height: 30rem;
 }
 
-.banner-box {
-    margin: 0 auto;
-    width: 95vw;
-    grid-row: 1;
-    grid-column: 1;
-}
-
 .banner-image {
     display: flex;
     max-width: 100%;
@@ -231,7 +225,6 @@ h2 {
 .bottom-border {
     margin: 25px auto 30px auto;
     border-top: 1px black solid;
-    width: 95vw;
     max-width: 800px;
     margin-bottom: 30px;
     margin-top: 0;
