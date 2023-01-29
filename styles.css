@@ -16,6 +16,12 @@ body {
 
 /* HEADER */
 
+.header-box {
+    background-color: white;
+    width: 100vw;
+    height: auto;
+}
+
 header {
     display: flex;
     width: 95vw;
