@@ -1,7 +1,17 @@
+html {
+    min-height: 100%;
+    display: flex;
+}
+
+
 body {
     background-color: white;
     font-family: 'Parisienne', cursive;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1
+
 }
 
 /* HEADER */
@@ -25,6 +35,8 @@ header {
 
 #header-logo {
     height: 80px;
+    position: relative;
+    /* left: 0.5vw; */
 }
 
 #nav-container {
@@ -108,7 +120,7 @@ a > img:hover {
 
 #main-body {
     display: grid;
-    width: 95vw;
+    /* width: 94.5vw; */
     grid-template-rows: 1;
     grid-template-columns: 1;
     min-height: 302px;
@@ -209,7 +221,7 @@ h2 {
 
 .gallery-image {
     max-height: 300px;
-    max-width: 300px;
+    max-width: 100%;
     object-fit: contain;
 }
 
@@ -233,7 +245,7 @@ h2 {
     grid-column: 1;
     flex-direction: column;
     width: 95vw;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     opacity: 0;
     transition: opacity .3s ease-in-out;
     padding: 10px 0;
@@ -242,8 +254,8 @@ h2 {
 .hamburger-list-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    max-height: 300px;
+    /* height: 100%; */
+    max-height: 50%;
     justify-content: space-evenly;
 }
 
@@ -277,29 +289,31 @@ footer {
     justify-content: space-between;
 }
 
-.footer {
-    display: inline-flex;
-    width: 33.3%
-}
-
 .footer-address {
     margin: 0 30px 0 0;
+    display: inline-flex;
+    width: 33.3%
 }
 
 .footer-hours {
     text-align: center;
     justify-content: center;
+    display: inline-flex;
+    width: 33.3%
 }
 
 .footer-social-links-container {
     flex-wrap: wrap;
     margin: 0 0 0 30px;
     justify-content: right;
+    display: inline-flex;
+    width: 33.3%
 }
 
 .social-links {
     width: auto;
     height: 40px;
+    object-fit: contain;
 }
 
 @media only screen and (max-width: 450px) {
@@ -329,13 +343,18 @@ footer {
 }
 
 @media only screen and (max-width: 493px) {
-    footer, .footer {
-        display: block;
+    footer, .footer-hours, .footer-address, .footer-social-links-container {
+        flex-direction: column;
         text-align: center;
         width: 100%;
         margin: 15px 0 0 0;
-
+        height: 100%;
+        justify-content: space-around;
     }
+
+    .footer-social-links-container {
+        display: block;
+    };
 }
 
 /* @media only screen and (max-width: 780px) {
