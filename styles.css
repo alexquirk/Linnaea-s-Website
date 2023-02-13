@@ -187,6 +187,10 @@ h2 {
     margin: 0;
 }
 
+.emphasized { 
+    font-style: italic; 
+}
+
 .content-image-left {
     margin: 0px auto 0px;
     height: auto;
