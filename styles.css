@@ -177,6 +177,10 @@ h1 {
     /* min-height: 500px; */
 }
 
+.menu {
+    width: 100%;
+}
+
 h2 {
     font-size: 1.2rem;
     line-height: 1.6rem;
