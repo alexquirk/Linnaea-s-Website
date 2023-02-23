@@ -181,6 +181,12 @@ h1 {
     width: 100%;
 }
 
+.loading {
+    background-image: url(./loadingcalendar.png);
+    background-size: cover;
+    background-position: center;
+}
+
 h2 {
     font-size: 1.2rem;
     line-height: 1.6rem;
