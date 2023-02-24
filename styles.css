@@ -66,6 +66,7 @@ a.header-nav {
 a.header-nav:hover {
     color: rgb(108, 108, 108);
     text-decoration: none;
+    text-decoration: underline;
 }
 
 a > img:hover {
