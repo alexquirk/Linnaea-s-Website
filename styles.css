@@ -203,6 +203,10 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: .9rem;
+}
+
 .emphasized { 
     font-style: italic; 
 }
