@@ -169,12 +169,34 @@ h1 {
 
 .gallery-text-box {
     display: block;
-    /* width: 95vw; */
     max-width: 800px;
-    margin: 0px auto 20px auto;
-    /* background-color: floralwhite; */
-    padding: 20px;
-    /* min-height: 500px; */
+    
+    /* spacing tweaks */
+    padding: 15px 0px 0px 0px;  /* top | right | bottom | left */
+    margin: 0 auto 0px auto;      /* top | sides | bottom | sides */
+}
+
+.gallery-cta {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 12px;
+    background-color: #ffffff;
+
+    /* NEW: subtle gray outline */
+    border: 1px solid #d6d6d6;
+
+    /* existing shadow */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+}
+
+.gallery-cta a {
+    text-decoration: none;
 }
 
 .full-width {
